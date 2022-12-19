@@ -873,3 +873,4 @@ as$L){$E=($L["SPECIFIC_NAME"]==$L["ROUTINE_NAME"]?"":"&name=".urlencode($L["ROUT
 as$L){echo"<tr>","<th>".h($L["Name"]),"<td>".($L["Execute at"]?lang(268)."<td>".$L["Execute at"]:lang(203)." ".$L["Interval value"]." ".$L["Interval field"]."<td>$L[Starts]"),"<td>$L[Ends]",'<td><a href="'.h(ME).'event='.urlencode($L["Name"]).'">'.lang(129).'</a>';}echo"</table>\n";$gc=$g->result("SELECT @@event_scheduler");if($gc&&$gc!="ON")echo"<p class='error'><code class='jush-sqlset'>event_scheduler</code>: ".h($gc)."\n";}echo'<p class="links"><a href="'.h(ME).'event=">'.lang(200)."</a>\n";}if($yg)echo
 script("ajaxSetHtml('".js_escape(ME)."script=db');");}}}page_footer();
 hii adding a new line here
+adding more changes
