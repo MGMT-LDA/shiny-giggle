@@ -1,0 +1,366 @@
+<?php
+	error_reporting(E_ALL);
+
+	include_once('private/settings.php');
+	include_once('classes/Patents.php');
+
+
+	$objPatents					=		new Patents();
+
+	$searchCode					=		'';
+	$patentFamily				=		array();
+
+	if(isset($_GET['patent_id']) && !empty($_GET['patent_id']))
+	{
+		$searchCode				=		$_GET['patent_id'];
+	}
+
+	if(strlen($searchCode) == 6 || strlen($searchCode) == 7 || strlen($searchCode) == 11)
+	{
+		$showContent				=		1;
+		$objPatents->patent_id		=		$searchCode;
+		$resultPatent				=		$objPatents->selectPatent();
+
+		if(!empty($resultPatent))
+		{
+			$content				=		str_replace("&Acirc;","",$resultPatent[0]->content);
+			$pdfLink				=		$resultPatent[0]->pdf_link;
+			$claim					=		$resultPatent[0]->claim;
+			$description			=		$resultPatent[0]->description;
+			$patentFamily			=		explode(",",$resultPatent[0]->patent_family);
+			$saveToDb				=		0;
+			
+			if(empty($claim) || empty($description))
+			{
+				$resultClaimAndDesc			=		$objPatents->getClaimAndDescription($content);
+				$claim						=		$resultClaimAndDesc['claim'];
+				$description				=		$resultClaimAndDesc['description'];
+				
+				$objPatents->claim			=	$claim;
+				$objPatents->description	=	$description;
+				$objPatents->updatePatentClaimAndDescription();
+			}
+		}
+		else
+		{
+			$resultPatent			=		$objPatents->crawlPatent();
+
+			$pdfLink				=		$resultPatent['pdfLink'];
+			$content				=		$resultPatent['content'];
+			$content				=		str_ireplace("<i>Claims",'<i><span id="claims">Claims</span>',$content);
+			$content				=		str_ireplace("<i>Description",'<i><span id="description">Description</span>',$content);
+			$content				=		'<div id="contentTop"></div>'.$content;
+			$saveToDb				=		1;
+			
+			$resultClaimAndDesc		=		$objPatents->getClaimAndDescription($content);
+			
+			$claim					=		$resultClaimAndDesc['claim'];
+			$description			=		$resultClaimAndDesc['description'];
+		}
+		
+		$pUrl						=		'https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US'.$searchCode.'.pdf';
+	
+		$gUrl						=		'https://www.google.com/patents/US'.$searchCode;
+
+		if(strlen($searchCode) > 7)
+		{
+			$searchCode				=		str_split($searchCode, 1);
+			array_splice($searchCode, 4, 1);
+			$searchCode				=		implode("",$searchCode);
+			//$eUrl					=		'https://worldwide.espacenet.com/publicationDetails/biblio?CC=US&NR='.$searchCode.'A1&KC=A1&FT=D';
+			$eUrl					=		$objPatents->getEspaceLink('https://worldwide.espacenet.com/data/searchResults?submitted=true&locale=en_EP&DB=EPODOC&ST=advanced&TI=&AB=&PN=US'.$searchCode.'&AP=&PR=&PD=&PA=&IN=&CPC=&IC=');
+		}
+		else
+		{
+			//$eUrl					=		'https://worldwide.espacenet.com/publicationDetails/biblio?CC=US&NR='.$searchCode.'B2&KC=B2&FT=D';
+			$eUrl					=		$objPatents->getEspaceLink('https://worldwide.espacenet.com/data/searchResults?submitted=true&locale=en_EP&DB=EPODOC&ST=advanced&TI=&AB=&PN=US'.$searchCode.'&AP=&PR=&PD=&PA=&IN=&CPC=&IC=');
+			
+			
+		}
+		
+		if(empty($patentFamily))
+			$patentFamily			=		$objPatents->getPatentFamily($eUrl);
+
+		$patentFamily				=		array_filter($patentFamily);
+	}
+	else
+	{
+		$showContent			=		0;
+	}
+
+	
+?>
+<html>
+	<head>
+		<style>
+			body
+			{
+				font-size:14px;
+				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+				margin:0;
+				overflow:hidden;
+			}
+			table, body font
+			{
+				font-size:14px;
+			}
+			
+			hr
+			{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				border: 0;
+				border-top: 1px solid #eee;
+			}
+
+			.main-container
+			{
+				height:100%;
+				overflow:hidden;
+			}
+			.topBar
+			{
+				background:#a4a4a4;
+				height:100px;
+				width:100%;
+			}
+
+			.headerLeft
+			{
+				float: left;
+				padding: 7px;
+				width: 6%;
+			}
+
+			.headerLeft img
+			{
+				width:100%;
+			}
+
+			.headerRight
+			{
+				float:right;
+			}
+
+			.container
+			{
+				margin:0 4px;
+			}
+
+			.left
+			{
+				width:50%;
+				float:left;
+				height:90%;
+				overflow-y: auto;
+				position:absolute;
+			}
+
+			.left hr:first-child
+			{
+				display:none;
+			}
+
+			.right
+			{
+				width:50%;
+				float:right;
+			}
+			.clr
+			{
+				clear:both;
+			}
+			.hide
+			{
+				display:none;
+			}
+		</style>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<title>iCUEVIEW</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrapper">
+				<div class="top-left">
+					<?php if(!empty($searchCode)): ?>
+						<div class="logo">
+							<a href="http://www.icuerious.com/" target="_blank"><img src="images/logo-new.png" /></a>
+						</div>
+						<div class="search-button">
+								<form method="get" action="<?php echo URL; ?>">
+									 <input id="search-input" name="patent_id" type="text" value="<?php echo $_GET['patent_id']; ?>">
+									 <img src="images/search-ico.png" >
+								</form>
+						</div>
+					<?php endif; ?>
+					<div class="clr"></div>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<?php if(!empty($content) && !empty($showContent)): 
+					
+					$content					=		str_replace("&Acirc;","",$content);
+					$content					=		preg_replace("/<img[^>]+\>/i", "", $content); 
+					$description				=		preg_replace("/<img[^>]+\>/i", "", $description);
+				?>
+				<div class="main-content">
+					<div class="top-div">
+						<div class="top-left">
+							<ul class="left-sec">
+								<li><a href="<?php echo $pUrl; ?>" target="_blank" title="Download PDF">P</a></li>
+								<li><a href="<?php echo $gUrl; ?>" target="_blank" title="Google Patents">G</a></li>
+								<li><a href="<?php echo $eUrl; ?>" target="_blank" title="EspaceNet">E</a></li>
+								<?php if(!empty($patentFamily)): ?>
+									<li>
+										<a href="#" class="patentFamilies" title="Patent Families">F</a>
+										<ul class="patentFamiliesList hide">
+											<?php foreach($patentFamily as $patentNumber): ?>
+												<li><?php echo $patentNumber; ?></li>
+											<?php endforeach; ?>
+										</ul>
+									</li>
+								<?php endif; ?>
+							</ul>
+							<span class="togale">
+								<div class="togale-show">	<img src="images/togal-2.jpg" /></div>
+								<div class="togale-hide">	<img src="images/togal-white.jpg" /></div>
+							</span>
+							<ul class="right-sec">
+								<li class="togale-claim"><a id="compare" title="Claims in view of Description">C|D</a></li>
+								<li><a href="#contentTop" class="contentTop"><img src="images/up arrow.png" alt="up arrow" title="Top" class="uparrow"></a></li>
+								<li><a href="#claims" title="Claims">C</a></li>
+								<li><a href="#description" title="Description">D</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-section">
+						<div class="left-side">
+							<div id="content-2" class="bottom-left content" >
+								<?php echo $content; ?>
+							</div>
+						</div>
+						<div class="right-side">
+							<embed src="<?php echo $pdfLink; ?>" width="100%" height="100%" type=application/pdf></embed>
+						</div>
+					</div>
+					<div class="content-section-2 hide" >
+						<div class="left-side">
+							<div id="content-2" class="bottom-left content" >
+								<?php echo $claim; ?>
+							</div>
+						</div>
+						<div class="right-side">
+							<?php echo $description; ?>
+						</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<?php
+					if(!empty($saveToDb))
+					{
+						$objPatents->content		=	$content;
+						$objPatents->pdfLink		=	$pdfLink;
+						$objPatents->claim			=	$claim;
+						$objPatents->description	=	$description;
+						$objPatents->patentFamily	=	implode(",",$patentFamily);
+						$objPatents->insertPatent();
+					}
+				?>
+			<?php elseif(empty($searchCode)): ?>
+				<div class="wrapper-home">
+					<div class="search-logo">
+						<div class="logo">
+							<a href="http://www.icuerious.com/" target="_blank"><img src="images/logo-new.png" /></a>
+						</div>
+						<form method="get" >
+							<input id="search-input" name="patent_id" type="text" placeholder="Publication Number...">
+							<input type="submit" value="Search" />
+						</form>
+					</div>
+				</div>
+			<?php else: ?>
+				<h2>Result Not Found</h2>
+			<?php endif; ?>
+		</div>
+	</body>
+<script src="js/jquery.min.js"></script>
+	<script>
+		
+		jQuery(document).ready(function(){
+			var headerHeight	=	jQuery('.header').outerHeight();
+			var windowHeight	=	window.innerHeight;
+			jQuery('.main-content').css({'height':(windowHeight-headerHeight-20)});
+			jQuery('body').css({'height':(windowHeight-headerHeight)});
+
+			$(document).on("click","a[href^='#']",function(e){
+			  var href=$(this).attr("href"),target=$(href).parents(".mCustomScrollbar");
+			  $('li').removeClass('active');
+			  //$(this).parent('li').addClass('active');
+			  var_clicked = true;
+			  if(target.length){
+				e.preventDefault();
+				target.mCustomScrollbar("scrollTo",href);
+			  }
+			});
+			
+			
+			
+			
+		});
+
+
+	</script>
+	<script>
+$(document).ready(function(){
+	
+	$('body').on("click",".disabled",function(){
+		return false;
+	});
+	
+    $(".togale-show").click(function(){
+		if(!$(this).hasClass('disabled'))
+		{
+			$(".right-side").animate({'width':'0'},50);
+			$(".left-side").animate({'width':'99%'},50);
+			$(".left-side").css({'border-right':'none'});
+		}
+    });
+    $(".togale-hide").click(function(){
+		if(!$(this).hasClass('disabled'))
+		{
+			$(".right-side").animate({'width':'49%'},50);
+			$(".left-side").animate({'width':'49%'},50);
+			$(".left-side").css({'border-right':'1px solid #c2c2c2'});
+		}
+    });
+		$(".togale-pdf").click(function(){
+				$(".right-side").animate({'width':'97%'},50);
+				$(".left-side").animate({'width':'0'},50);
+				$(".left-side").css({'border-right':'none'});
+		});
+	
+	$('.patentFamilies').click(function(){
+		$(this).parent().toggleClass('active');
+		$('.patentFamiliesList').toggleClass('hide');
+		return false;
+	});
+});
+
+$('#compare').click(function(){
+	$(this).toggleClass('active');
+	$('.content-section').toggleClass('hide');
+	$('.content-section-2').toggleClass('hide');
+	$('.togale-hide').trigger('click');
+	$('.right-sec li a').not(this).toggleClass('disabled');
+	$('.togale-hide').toggleClass('disabled');
+	$('.togale-show').toggleClass('disabled');
+});
+
+
+
+</script>
+</html>

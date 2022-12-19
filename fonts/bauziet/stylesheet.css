@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Bauziet Norm';
+    src: url('BauzietNormLight.eot');
+    src: url('BauzietNormLight.eot?#iefix') format('embedded-opentype'),
+        url('BauzietNormLight.woff2') format('woff2'),
+        url('BauzietNormLight.woff') format('woff'),
+        url('BauzietNormLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet Norm';
+    src: url('BauzietNormExtraBold.eot');
+    src: url('BauzietNormExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('BauzietNormExtraBold.woff2') format('woff2'),
+        url('BauzietNormExtraBold.woff') format('woff'),
+        url('BauzietNormExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet Norm';
+    src: url('BauzietNormBold.eot');
+    src: url('BauzietNormBold.eot?#iefix') format('embedded-opentype'),
+        url('BauzietNormBold.woff2') format('woff2'),
+        url('BauzietNormBold.woff') format('woff'),
+        url('BauzietNormBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet Norm';
+    src: url('BauzietNormRegular.eot');
+    src: url('BauzietNormRegular.eot?#iefix') format('embedded-opentype'),
+        url('BauzietNormRegular.woff2') format('woff2'),
+        url('BauzietNormRegular.woff') format('woff'),
+        url('BauzietNormRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet Norm';
+    src: url('BauzietNormSemiBold.eot');
+    src: url('BauzietNormSemiBold.eot?#iefix') format('embedded-opentype'),
+        url('BauzietNormSemiBold.woff2') format('woff2'),
+        url('BauzietNormSemiBold.woff') format('woff'),
+        url('BauzietNormSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bauziet Norm';
+    src: url('BauzietNormMedium.eot');
+    src: url('BauzietNormMedium.eot?#iefix') format('embedded-opentype'),
+        url('BauzietNormMedium.woff2') format('woff2'),
+        url('BauzietNormMedium.woff') format('woff'),
+        url('BauzietNormMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

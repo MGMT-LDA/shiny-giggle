@@ -1,0 +1,317 @@
+<?php
+	error_reporting(E_ALL);
+
+	include_once('private/settings.php');
+	include_once('classes/Patents.php');
+
+
+	$objPatents					=		new Patents();
+
+	$searchCode					=		'';
+
+	if(isset($_GET['patent_id']) && !empty($_GET['patent_id']))
+	{
+		$searchCode				=		$_GET['patent_id'];
+	}
+
+	if(strlen($searchCode) == 6 || strlen($searchCode) == 7 || strlen($searchCode) == 11)
+	{
+		$showContent				=		1;
+		$objPatents->patent_id		=		$searchCode;
+		$resultPatent				=		$objPatents->selectPatent();
+
+		if(!empty($resultPatent))
+		{
+			$content				=		$resultPatent[0]->content;
+			$pdfLink				=		$resultPatent[0]->pdf_link;
+			$claim					=		$resultPatent[0]->claim;
+			$description			=		$resultPatent[0]->description;
+			$saveToDb				=		0;
+		}
+		else
+		{
+			$resultPatent			=		$objPatents->crawlPatent();
+
+			$pdfLink				=		$resultPatent['pdfLink'];
+			$content				=		$resultPatent['content'];
+			$content				=		str_ireplace("<I>Claims",'<i id="claims">Claims',$content);
+			$content				=		str_ireplace("<I>Description",'<i id="description">Description',$content);
+			$content				=		'<div id="contentTop"></div>'.$content;
+			$saveToDb				=		1;
+			
+			$resultClaimAndDesc		=		$objPatents->getClaimAndDescription($content);
+			
+			$claim					=		$resultClaimAndDesc['claim'];
+			$description			=		$resultClaimAndDesc['description'];
+		}
+	}
+	else
+	{
+		$showContent			=		0;
+	}
+
+	$pUrl						=		'https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US'.$searchCode.'.pdf';
+	
+	$gUrl						=		'https://www.google.com/patents/US'.$searchCode;
+
+	if(strlen($searchCode) > 7)
+	{
+		$searchCode				=		str_split($searchCode, 1);
+		array_splice($searchCode, 4, 1);
+		$searchCode				=		implode("",$searchCode);
+		//$eUrl					=		'https://worldwide.espacenet.com/publicationDetails/biblio?CC=US&NR='.$searchCode.'A1&KC=A1&FT=D';
+		$eUrl					=		$objPatents->getEspaceLink('https://worldwide.espacenet.com/searchResults?submitted=true&locale=en_EP&DB=EPODOC&ST=advanced&TI=&AB=&PN=US'.$searchCode.'&AP=&PR=&PD=&PA=&IN=&CPC=&IC=');
+	}
+	else
+	{
+		//$eUrl					=		'https://worldwide.espacenet.com/publicationDetails/biblio?CC=US&NR='.$searchCode.'B2&KC=B2&FT=D';
+		$eUrl					=		$objPatents->getEspaceLink('https://worldwide.espacenet.com/searchResults?submitted=true&locale=en_EP&DB=EPODOC&ST=advanced&TI=&AB=&PN=US'.$searchCode.'&AP=&PR=&PD=&PA=&IN=&CPC=&IC=');
+	}
+	
+	$patentFamily				=		$objPatents->getPatentFamily($eUrl);
+?>
+<html>
+	<head>
+		<style>
+			body
+			{
+				font-size:12px;
+				font-family: verdana;
+				margin:0;
+				overflow:hidden;
+			}
+			table, body font
+			{
+				font-size:12px;
+			}
+
+			.main-container
+			{
+				height:100%;
+				overflow:hidden;
+			}
+			.topBar
+			{
+				background:#a4a4a4;
+				height:100px;
+				width:100%;
+			}
+
+			.headerLeft
+			{
+				float: left;
+				padding: 7px;
+				width: 6%;
+			}
+
+			.headerLeft img
+			{
+				width:100%;
+			}
+
+			.headerRight
+			{
+				float:right;
+			}
+
+			.container
+			{
+				margin:0 4px;
+			}
+
+			.left
+			{
+				width:50%;
+				float:left;
+				height:90%;
+				overflow-y: auto;
+				position:absolute;
+			}
+
+			.left hr:first-child
+			{
+				display:none;
+			}
+
+			.right
+			{
+				width:50%;
+				float:right;
+			}
+			.clr
+			{
+				clear:both;
+			}
+			.hide
+			{
+				display:none;
+			}
+		</style>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<title>Icue RIOUS</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrapper">
+				<div class="top-left">
+					<?php if(!empty($searchCode)): ?>
+						<div class="logo">
+							<a href="http://www.icuerious.com/" target="_blank"><img src="images/logo-new.png" /></a>
+						</div>
+						<div class="search-button">
+								<form method="get" action="<?php echo URL; ?>">
+									 <input id="search-input" name="patent_id" type="text" value="<?php echo $_GET['patent_id']; ?>">
+									 <img src="images/search-ico.png" >
+								</form>
+						</div>
+					<?php endif; ?>
+					<div class="clr"></div>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<?php if(!empty($content) && !empty($showContent)): ?>
+				<div class="main-content">
+					<div class="top-div">
+						<div class="top-left">
+							<ul class="left-sec">
+								<li><a href="<?php echo $pUrl; ?>" target="_blank" title="Download PDF">P</a></li>
+								<li><a href="<?php echo $gUrl; ?>" target="_blank" title="Google Patents">G</a></li>
+								<li><a href="<?php echo $eUrl; ?>" target="_blank" title="EspaceNet">E</a></li>
+							</ul>
+							<span class="togale">
+								<div class="togale-show">	<img src="images/togal-2.jpg" /></div>
+								<div class="togale-hide">	<img src="images/togal-white.jpg" /></div>
+								<div class="togale-claim">	<a id="compare">C|D</a></div>
+							</span>
+							<ul class="right-sec">
+								<li><a href="#contentTop"><img src="images/up arrow.png" alt="up arrow" title="Top" class="uparrow"></a></li>
+								<li><a href="#claims" title="Claims">C</a></li>
+								<li><a href="#description" title="Description">D</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="content-section">
+						<div class="left-side">
+							<div id="content-2" class="bottom-left content" >
+								<?php echo $content; ?>
+							</div>
+						</div>
+						<div class="right-side">
+							<embed src="<?php echo $pdfLink; ?>" width="100%" height="100%" type=application/pdf></embed>
+						</div>
+					</div>
+					<div class="content-section-2 hide" >
+						<div class="left-side">
+							<div id="content-2" class="bottom-left content" >
+								<?php echo $claim; ?>
+							</div>
+						</div>
+						<div class="right-side">
+							<?php echo $description; ?>
+						</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<?php
+					if(!empty($saveToDb))
+					{
+						$objPatents->content		=	$content;
+						$objPatents->pdfLink		=	$pdfLink;
+						$objPatents->claim			=	$claim;
+						$objPatents->description	=	$description;
+						$objPatents->insertPatent();
+					}
+				?>
+			<?php elseif(empty($searchCode)): ?>
+				<div class="wrapper-home">
+					<div class="search-logo">
+						<div class="logo">
+							<a href="http://www.icuerious.com/" target="_blank"><img src="images/logo-new.png" /></a>
+						</div>
+						<form method="get" >
+							<input id="search-input" name="patent_id" type="text" placeholder="Publication Number...">
+							<input type="submit" value="Search" />
+						</form>
+					</div>
+				</div>
+			<?php else: ?>
+				<h2>Result Not Found</h2>
+			<?php endif; ?>
+		</div>
+	</body>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script>
+		
+		jQuery(document).ready(function(){
+			var headerHeight	=	jQuery('.header').outerHeight();
+			var windowHeight	=	window.innerHeight;
+			jQuery('.main-content').css({'height':(windowHeight-headerHeight-20)});
+			jQuery('body').css({'height':(windowHeight-headerHeight)});
+
+			$(document).on("click","a[href^='#']",function(e){
+			  var href=$(this).attr("href"),target=$(href).parents(".mCustomScrollbar");
+			  $('li').removeClass('active');
+			  //$(this).parent('li').addClass('active');
+			  var_clicked = true;
+			  if(target.length){
+				e.preventDefault();
+				target.mCustomScrollbar("scrollTo",href);
+			  }
+			});
+			
+			
+			
+			
+		});
+
+
+	</script>
+	<script>
+$(document).ready(function(){
+	
+	$('body').on("click",".disabled",function(){
+		return false;
+	});
+	
+    $(".togale-show").click(function(){
+		if(!$(this).hasClass('disabled'))
+		{
+			$(".right-side").animate({'width':'0'},50);
+			$(".left-side").animate({'width':'99%'},50);
+			$(".left-side").css({'border-right':'none'});
+		}
+    });
+    $(".togale-hide").click(function(){
+		if(!$(this).hasClass('disabled'))
+		{
+			$(".right-side").animate({'width':'49%'},50);
+			$(".left-side").animate({'width':'49%'},50);
+			$(".left-side").css({'border-right':'1px solid #c2c2c2'});
+		}
+    });
+		$(".togale-pdf").click(function(){
+				$(".right-side").animate({'width':'97%'},50);
+				$(".left-side").animate({'width':'0'},50);
+				$(".left-side").css({'border-right':'none'});
+		});
+		
+});
+
+$('#compare').click(function(){
+	$(this).toggleClass('active');
+	$('.content-section').toggleClass('hide');
+	$('.content-section-2').toggleClass('hide');
+	$('.togale-hide').trigger('click');
+	$('.right-sec li a').toggleClass('disabled');
+	$('.togale-hide').toggleClass('disabled');
+	$('.togale-show').toggleClass('disabled');
+});
+
+
+
+</script>
+</html>

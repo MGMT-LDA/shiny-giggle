@@ -1,0 +1,538 @@
+[25-Aug-2022 13:12:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[25-Aug-2022 13:18:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Patents' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php on line 7
+[26-Aug-2022 05:22:29 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 75
+[26-Aug-2022 05:23:26 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 75
+[26-Aug-2022 05:24:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function registerUser() in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 14
+[26-Aug-2022 05:24:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::selectUser() in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:13
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php(45): registerUser(Array)
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 13
+[26-Aug-2022 05:25:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::selectUser() in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:17
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php(46): registerUser(Array)
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 17
+[26-Aug-2022 05:46:00 UTC] PHP Fatal error:  Uncaught Error: Class 'EmailNotification' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:91
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 91
+[26-Aug-2022 06:20:37 UTC] PHP Fatal error:  Uncaught Error: Class 'EmailNotification' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:91
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 91
+[26-Aug-2022 06:21:33 UTC] PHP Fatal error:  Uncaught Error: Class 'EmailNotification' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:91
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 91
+[26-Aug-2022 06:23:25 UTC] PHP Fatal error:  Uncaught Error: Class 'EmailNotification' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:91
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 91
+[26-Aug-2022 06:24:00 UTC] PHP Fatal error:  Uncaught Error: Class 'EmailNotification' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php:91
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php on line 91
+[26-Aug-2022 10:28:35 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:38 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:39 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:39 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:39 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:40 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:40 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:40 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:40 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:45 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:45 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:45 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:47 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:48 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:30:49 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:31:08 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:31:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:31:41 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:23 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:25 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:25 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:25 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:25 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:26 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:30 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:30 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:30 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:33:31 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:43:03 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:47:07 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:50:17 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:50:20 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:50:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:50:42 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:50:42 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 10:54:32 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 11:00:49 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[26-Aug-2022 11:01:33 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[29-Aug-2022 07:40:20 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[29-Aug-2022 07:40:22 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[29-Aug-2022 07:40:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[29-Aug-2022 07:40:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[29-Aug-2022 07:40:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[29-Aug-2022 07:40:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[30-Aug-2022 08:07:21 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[30-Aug-2022 08:07:22 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[30-Aug-2022 08:07:23 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[30-Aug-2022 08:07:23 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[30-Aug-2022 08:07:23 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[30-Aug-2022 08:09:48 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[31-Aug-2022 10:51:22 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[31-Aug-2022 11:15:37 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[31-Aug-2022 13:00:01 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[01-Sep-2022 12:18:35 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[01-Sep-2022 12:19:16 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[01-Sep-2022 12:55:43 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[01-Sep-2022 12:57:08 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[05-Sep-2022 11:57:45 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[05-Sep-2022 11:57:45 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[06-Sep-2022 05:25:19 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[06-Sep-2022 05:26:08 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[06-Sep-2022 07:40:44 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[06-Sep-2022 07:47:58 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[06-Sep-2022 08:05:32 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 03:55:53 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 03:58:58 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 03:59:27 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 05:43:08 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 05:59:48 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 06:11:09 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 06:34:41 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 07:01:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 07:10:11 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 07:20:51 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 07:20:51 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 07:22:19 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 11:39:35 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 11:40:21 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 11:49:52 UTC] PHP Fatal error:  Uncaught Error: Class 'DbHelper' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php:8
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/managePatents.php(3): include_once()
+#1 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/Patents.php on line 8
+[08-Sep-2022 13:08:06 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php on line 30
+[08-Sep-2022 13:09:31 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php:33
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/EmailNotification.php(32): sendMail('testing@gmail.c...', 'kuldeep@netzopt...', 'Icuerious', 'Password Reset', 'Hi Kuldeep Shar...', '')
+#1 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php(105): EmailNotification->forgotPasswordmail()
+#2 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php on line 33
+[08-Sep-2022 13:16:29 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php on line 4
+[14-Sep-2022 08:13:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::setFrom() in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php:48
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/EmailNotification.php(32): sendMail('verma@gmail.com', 'kuldeep@netzopt...', 'Icuerious', 'Password Reset', 'Hi dd dd,<br/><...', '')
+#1 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php(105): EmailNotification->forgotPasswordmail()
+#2 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php on line 48
+[14-Sep-2022 08:14:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::setFrom() in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php:48
+Stack trace:
+#0 /home/customer/www/zeroguess.us/public_html/n13/icuview/classes/EmailNotification.php(32): sendMail('verma@gmail.com', 'kuldeep@netzopt...', 'Icuerious', 'Password Reset', 'Hi dd dd,<br/><...', '')
+#1 /home/customer/www/zeroguess.us/public_html/n13/icuview/ajax/manageUsers.php(105): EmailNotification->forgotPasswordmail()
+#2 {main}
+  thrown in /home/customer/www/zeroguess.us/public_html/n13/icuview/mail/sendmail.php on line 48
