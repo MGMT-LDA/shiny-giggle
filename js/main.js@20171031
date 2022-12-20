@@ -1,3 +1,4 @@
+hello world
 var commentsParent	=	'';
 var savePage		=	0;
 jQuery(document).ready(function(){
